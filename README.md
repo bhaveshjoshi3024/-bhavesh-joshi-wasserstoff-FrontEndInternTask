@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Real-Time Collaborative Editor
 
-## Getting Started
+A simple browser-based real-time collaborative text editor built using **Next.js**, **JavaScript**, and the **BroadcastChannel API** — with no backend or database.
 
-First, run the development server:
+---
+
+## 📌 Features
+
+- ✅ Real-time multi-user editing
+- ✅ Shows active users
+- ✅ Displays who edited last and when
+- ✅ Username prompt on load
+- ✅ No backend or database required
+- ✅ Fully client-side with `BroadcastChannel`
+
+---
+
+## 🔍 How It Works
+
+- When a user opens the app, they're prompted to enter a username.
+- The app uses `BroadcastChannel` to sync:
+  - User presence (`UserList`)
+  - Text changes (`Editor`)
+- All tabs communicate via the browser API to simulate real-time collaboration.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: [Next.js](https://nextjs.org/)
+- **Language**: JavaScript (no TypeScript)
+- **Styling**: Tailwind CSS
+- **Real-Time Sync**: BroadcastChannel API
+- **Deployment**: [Vercel](https://vercel.com)
+
+---
+
+## 📂 Project Structure
 
 ```bash
+.
+├── components/
+│   ├── Editor.js          # ContentEditable area with real-time sync
+│   ├── UserList.js        # Shows active users and current username
+│   └── UsernamePrompt.js  # (Optional) Separate prompt component
+├── pages/
+│   └── index.js           # Main entry point and layout
+├── utils/
+│   └── useBroadcast.js    # Custom hook for handling real-time sync
+├── public/
+├── styles/
+└── README.md
+
+
+ Getting Started
+1. Clone the Repository
+git clone https://github.com/your-username/realtime-collab-editor.git
+cd realtime-collab-editor
+2. Install Dependencies
+npm install
+3. Run the App
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌐 Live Demo
+👉 [Link](https://bhavesh-joshi-wasserstoff-front-end-intern-task.vercel.app)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🙋‍♂️ Author
+Bhavesh Joshi
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+GitHub: bhaveshjoshi3024
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+LinkedIn: [Link](https://www.linkedin.com/in/bhavesh-joshi-626a98184)
