@@ -61,12 +61,13 @@ npm install
 3. Run the App
 npm run dev
 
-🌐 Live Demo
-👉 [Link](https://bhavesh-joshi-wasserstoff-front-end-intern-task.vercel.app)
+## 🌐 Live Demo  
+👉 **[Click here to try it live](https://bhavesh-joshi-wasserstoff-front-end-intern-task.vercel.app)**
 
-🙋‍♂️ Author
-Bhavesh Joshi
+---
 
-GitHub: bhaveshjoshi3024
+## 🙋‍♂️ Author  
+**Bhavesh Joshi**  
+- 🧑‍💻 GitHub: [bhaveshjoshi3024](https://github.com/bhaveshjoshi3024)  
+- 🔗 LinkedIn: [Bhavesh Joshi](https://www.linkedin.com/in/bhavesh-joshi-626a98184)
 
-LinkedIn: [Link](https://www.linkedin.com/in/bhavesh-joshi-626a98184)
